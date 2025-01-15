@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instant Loan Processing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <h1 class="hero-text">i-DBT</h1>
+        <p>The fastest way to get your loans approved instantly.</p>
+    </header>
+
+    <main>
+        <section id="stats">
+            <h2>The Fastest Way to Get Loans</h2>
+            <div id="loan-stats">
+                <div class="stat">
+                    <h3>Loan Approved</h3>
+                    <p id="approved-value">0</p>
+                </div>
+                <div class="stat">
+                    <h3>Loans Sanctioned</h3>
+                    <p id="sanctioned-value">0</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="progress-bar">
+            <h3>Loan Process Progress</h3>
+            <div class="progress-container">
+                <div id="loan-progress-bar"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- About Us Section -->
+<section id="about-us">
+    <h2>About Us</h2>
+    <p>We are committed to providing the fastest and most reliable loan processing services to help you get the financial support you need. Our platform ensures a seamless and hassle-free experience.</p>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="service">
+        <h3>Instant Loan Approval</h3>
+        <p>Get your loan approved instantly through our quick and efficient platform.</p>
+    </div>
+    <div class="service">
+        <h3>Loan Sanctioning</h3>
+        <p>Our loan sanctioning process is quick, allowing you to secure funds faster.</p>
+    </div>
+    <div class="service">
+        <h3>Customer Support</h3>
+        <p>We provide 24/7 support to guide you through the loan application process.</p>
+    </div>
+</section>
+
+ <div id="chatbot-container">
+    <div id="open-chat" class="floating-button" onclick="openChat()">
+        <img src="https://i.ibb.co/D8XFGTy/Screenshot-2025-01-14-153910.png" alt="Chatbot">
+    </div>
+
+    <div id="chatbot" class="chat-container">
+        <button id="close-chat" class="close-button" onclick="closeChat()">×</button>
+        <div id="chat-box" class="chat-box"></div>
+
+        <div id="chat-options">
+            <button onclick="chooseCustomer('new')">New Customer</button>
+            <button onclick="chooseCustomer('existing')">Existing Customer</button>
+        </div>
+
+        <div id="user-form" style="display:none;">
+            <input type="text" id="user-input" placeholder="Type here..." onkeydown="handleInput(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+        
+
+        <div id="loan-options" style="display:none;">
+            <p>Select the type of loan:</p>
+            <button onclick="selectLoan('Property')">Property</button>
+            <button onclick="selectLoan('Car')">Car</button>
+            <button onclick="selectLoan('Phone')">Phone</button>
+            <button onclick="selectLoan('Laptop')">Laptop</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <footer>
+        <p>&copy; 2025 Instant Loan Processing. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
